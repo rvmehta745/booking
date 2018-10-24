@@ -15,20 +15,20 @@
 						<li><a href="#home">HOME</a></li>
 						<li><a href="#explore">ROOMS</a></li>
 						<li><a href="#">RESERVATION</a></li>
-						<li><a href="#">FEATURES</a></li>
-						<li><a href="#">TESTIMONIAL</a></li>
-						<li><a href="#">CONTACT US</a></li>
+						<li><a href="#feature">FEATURES</a></li>
+						<li><a href="#test">TESTIMONIAL</a></li>
+						<li><a href="#contact">CONTACT US</a></li>
 					</ul>
 			</div>
 			<div id="Sidenav" class="sidenav">
 				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				  <div class="res-menu">
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ROOMS</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#explore">ROOMS</a></li>
 					<li><a href="#">RESERVATION</a></li>
-					<li><a href="#">FEATURES</a></li>
-					<li><a href="#">TESTIMONIAL</a></li>
-					<li><a href="#">CONTACT US</a></li>
+					<li><a href="#feature">FEATURES</a></li>
+					<li><a href="#test">TESTIMONIAL</a></li>
+					<li><a href="#contact">CONTACT US</a></li>
 				  <ul class="social">
 					<li>
 						<a href="#"><i class="fa fa-facebook"></i></a>
@@ -94,7 +94,7 @@
 					</div>
 					<div class="r-inner">
 						<div class="r-img">
-							<img src="images/about.png" alt="" title="">
+							<img src="images/triple_room_04-235x167.png" alt="" title="">
 						</div>
 						<div class="r-detail">
 							<a href="#">Single Rooms</a>
@@ -103,7 +103,7 @@
 					</div>
 					<div class="r-inner">
 						<div class="r-img">
-							<img src="images/about.png" alt="" title="">
+							<img src="images/triple_room_05-235x167.png" alt="" title="">
 						</div>
 						<div class="r-detail">
 							<a href="#">Single Rooms</a>
@@ -112,7 +112,7 @@
 					</div>
 					<div class="r-inner">
 						<div class="r-img">
-							<img src="images/about.png" alt="" title="">
+							<img src="images/slide_02-891x636.png" alt="" title="">
 						</div>
 						<div class="r-detail">
 							<a href="#">Single Rooms</a>
@@ -122,7 +122,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="feature">
+		<section class="feature" id="feature">
 			<div class="container">
 			<h2>Features</h2>
 				<div class="f-inner">
@@ -142,7 +142,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="testimonial">
+		<section class="testimonial" id="test">
 			<div class="container">
 				<h2>Testimonial</h2>
 					<div class="test-inner">
@@ -177,7 +177,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="contact-us">
+		<section class="contact-us" id="contact">
 			<div class="container">
 				<h2>Contact us</h2>
 				<div class="contact-us-inner">
@@ -242,6 +242,19 @@ $(document).ready(function(){
 	autoplaySpeed: 5000,
 	dots:true
   });
+});
+
+$( ".l-menu a[href^='#'], .res-menu a[href^='#']").on( 'click', function ( e ) {
+			// prevent default anchor click behavior
+			e.preventDefault();
+			// store hash
+			var hash = this.hash;
+			window.location.hash = "";
+			// animate
+			$( 'html, body' ).animate( {
+				scrollTop: $( hash ).offset().top
+			}, 1000, function () {
+			});
 });
 </script>
 </body>
