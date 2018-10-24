@@ -148,8 +148,8 @@ button.submit:hover { background: rgba(203, 17, 48, 0.8); }
 .r-detail a {  transition: 0.5s all;font-size: 24px; color: #CB1130; position: relative;margin-bottom:10px;display:block;max-width:180px; }
 .r-detail { padding: 20px; }
 .r-main > div:nth-of-type(3n) { margin-right: 0; }
-.r-main { display: flex; justify-content: center; flex-wrap: wrap; }
-.r-main > div { width: 31%; margin-right: 3.5%;margin-bottom:50px; }
+.r-main { display: flex;flex-wrap: wrap; }
+.r-main > div { width: 31%; margin-right: 3.5%;margin-bottom:50px;max-width:390px; }
 .r-detail { padding: 20px; border: 1px solid rgba(0,0,0,0.16); box-shadow: 0 3px rgba(0,0,0,0.16); }
 .r-img img { max-width: 100%; height: 390px; width: 100%; }
 .r-detail a:after { content: "\f061"; font-family: fontawesome; right: 9px; top: 8px;transition: 0.5s all;height: 10px; width: 12px; font-size: 14px; position: absolute; }
@@ -244,7 +244,12 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	h4 { font-family: 'Roboto-Bold'; font-size: 22px; }
 	h5 { font-family: 'Roboto-Bold'; font-size: 20px; }
 	h6 { font-family: 'Roboto-Bold'; font-size: 18px;  }
+	.r-img img{height:auto;}
+	form.contactForm input{padding:15px 20px;}
+	.col-1 .form-field textarea#message{height:60px;}
+	iframe {height: 600px;}
 }
+
 
 @media(max-width:1024px){
 	.social-icon{height:20%;}
@@ -255,8 +260,16 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	h4 { font-family: 'Roboto-Bold'; font-size: 22px; }
 	h5 { font-family: 'Roboto-Bold'; font-size: 20px; }
 	h6 { font-family: 'Roboto-Bold'; font-size: 18px;  }
+	.banner{height:100%;padding:40px 0;}
+	.feature-l ul li{font-size:18px;}
+	form.contactForm input{margin-bottom:20px;}
+	.r-detail a{font-size:18px;}
+	.r-detail a:after { right: 42px; top: 3px; }
+	.r-detail p{font-size:15px;}
 }
 @media(max-width:767px){
+	h1{font-size:30px;}
+	h2{font-size:25px;}
 	.l-menu{display:none;}
 	.sidenav{display:block;}
 	.toggle{display:block;}
@@ -268,6 +281,50 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	.right-sec{width:100%;}
 	header { position: relative; width: 100%; left: 0; padding: 0 0; height: 60px;    background: #CB1130; }
 	.res-menu li { list-style-type: none; }
-	
+	.banner-inner{padding:0 20px;}
+	form.serch input{max-width:320px;min-width: auto;}
+	button.submit{min-width:100px;margin-left:10px;}
+	form.serch input{font-size:12px;padding:19px 24px 19px 8px;}
+	.banner-inner p{margin-bottom:30px;}
+	.banner-inner h1{margin-bottom:30px;}
+	.r-main > div{width:48%;margin-right:4%;}
+	.r-main > div:nth-of-type(2n){margin-right:0;}
+	.r-main > div:nth-of-type(3n){margin-right:4%;}
+	.r-main > div:last-child{margin-right:0;}
+	.f-inner > div {width: 100%;}
+	.f-inner{flex-wrap:wrap;display:flex;}
+	.feature-l{order:2;}
+	.feature h2{margin-bottom:30px;}
+	.testimonial h2{margin-bottom:40px;}
+	.test-inner{padding-top:20px;padding-bottom:0;}
+	.contact-us h2{margin-bottom:30px;}
+	.contact-us-inner{display:block;}
+	.contact-us-left {width: 100%; padding-bottom: 30px;}
+	.contact-us-right { width: 100%; margin-left: 0; }
+	iframe{height:250px;}
+	.f-inner > div{text-align:center;}
+	.feature-l ul li{text-align:left;}
+	.contact-us{padding:50px 0 30px;}
+	footer p{padding:15px 0;font-size:14px;}
 	/********************banner*********************************/
+}
+
+@media(max-width:640px){
+	form.subscribe-f input{min-width:200px;}
+	button.subscribe-btn{width:150px;}
+}
+
+@media(max-width:480px){
+	form.subscribe-f input { width: 100%; max-width: 250px; margin: 0 auto; }
+	form.subscribe-f{display:block;}
+	.serch-loc { margin-right: 0; margin: 0 auto; margin-bottom: 15px; display: inline-flex; width: 100%; }
+	button.subscribe-btn { width: 100%; margin: 0 auto; text-align: center; max-width: 150px; display: block; }
+	.r-main > div{width:100%;margin-right:0;margin:0 auto;margin-bottom:30px;}
+	.r-main > div:nth-of-type(3n){margin-right:0%;margin:0 auto;margin-bottom:30px;}
+	.r-main > div:nth-of-type(2n){margin:0 auto;margin-bottom:30px;}
+	
+}
+
+@media(max-width:375px){
+	button.submit{padding:0 10px;min-width:90px;}
 }
