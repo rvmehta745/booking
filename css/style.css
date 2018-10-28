@@ -55,6 +55,57 @@ table { border-collapse: collapse; border-spacing: 0; }
   color: #CB1130;
 }
 
+#more-info input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6D6D6D;
+}
+#more-info input::-moz-placeholder { /* Firefox 19+ */
+  color: #6D6D6D;
+}
+#more-info input:-ms-input-placeholder { /* IE 10+ */
+  color: #6D6D6D;
+}
+#more-info input:-moz-placeholder { /* Firefox 18- */
+  color: #6D6D6D;
+}
+#more-info input:focus::-webkit-input-placeholder {
+    color: #CB1130;
+}
+#more-info input:focus:-moz-placeholder {
+    color: #CB1130;
+}
+#more-info input:focus::-moz-placeholder {
+    color: #CB1130;
+}
+#more-info input:focus:-ms-input-placeholder {
+    color: #CB1130;
+}
+
+
+#more-info textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6D6D6D;
+}
+#more-info textarea::-moz-placeholder { /* Firefox 19+ */
+  color: #6D6D6D;
+}
+#more-info textarea:-ms-input-placeholder { /* IE 10+ */
+  color: #6D6D6D;
+}
+#more-info textarea:-moz-placeholder { /* Firefox 18- */
+  color: #6D6D6D;
+}
+#more-info textarea:focus::-webkit-input-placeholder {
+    color: #CB1130;
+}
+#more-info textarea:focus:-moz-placeholder {
+    color: #CB1130;
+}
+#more-info textarea:focus::-moz-placeholder {
+    color: #CB1130;
+}
+#more-info textarea:focus:-ms-input-placeholder {
+    color: #CB1130;
+}
+
 /*--------------------------------------------------------
 BEGIN THEME STYLESHEET
 --------------------------------------------------------*/
@@ -197,7 +248,7 @@ button.subscribe-btn { font-family: 'Roboto-Regular';width: 200px; padding: 16px
 form.subscribe-f { display: flex; justify-content: center; flex-wrap: wrap; }
 .serch-loc { margin-right: 30px; }
 button.subscribe-btn:hover { background: rgba(0, 0, 0, 0.8); }
-
+.cf:after, .cf:before{content: ""; display: block; clear: both}
 
 /*--------------------------------------------------------
 /* contact-us style
@@ -207,7 +258,7 @@ button.subscribe-btn:hover { background: rgba(0, 0, 0, 0.8); }
 .contact-us h2{position: relative; margin-bottom:53px;}
 .contact-us h2:after { content: ""; position: absolute; background: #CB1130; height: 3px; width: 60px; bottom: -10px; left: 0; }
 form { padding: 8px 0 0 0; width:100%; } 
-div > span { position: absolute; font-size: 14px; padding-left: 21px; padding-top: 5px;}
+/*.res-flip { display: flex; flex-wrap: wrap; }*/
 .col-1 { width: 100%; outline: none;} 
 .form-field > input#phone { width:100%; padding: 20px; border: solid 1px #331e4c; border-radius: 40px; box-sizing: border-box; font-weight: 700; outline: none; font-family: 'Lato'; }
 .col-1 .form-field { width: 100%;}
@@ -218,6 +269,17 @@ form.contactForm input { font-family: 'Roboto-Regular';border-radius: 0; border:
 .contact-us-right{width:35%;margin-left:5%;}
 .contact-us-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
 button.contact-sub { background: #CB1130; border: 0; color: #fff; width: 200px; padding: 18px 0; display: block; font-size: 18px; border-radius: 5px; margin-top: 46px; }
+.cont .checkmark:after { left: 11px; top: 7px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+.cont input:checked ~ .checkmark:after {display: block;}
+.checkmark:after {content: "";position: absolute;display: none;}
+.cont input:checked ~ .checkmark {background-color: #CB1130;border: 1px solid #CB1130;}
+.checkmark { position: absolute; top: 0; left: 0; height: 30px; width: 30px; background-color: transparent; border: 1px solid #707070; }
+.cont input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.cont {display: block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 22px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.cont.cir .checkmark { height: 18px; width: 18px; border-radius: 50%; }
+form#more-info { margin-bottom: 74px; }
+.b-detail h3 { margin-bottom: 30px; }
+
 
 /*--------------------------------------------------------
 /* footer part style
@@ -232,10 +294,136 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 .sidenav .closebtn {position: absolute;top: 0;right: 20px;font-size: 36px;margin-left: 50px;}
 .toggle { position: absolute; left: 20px; top: 15px; display: none;color:#fff; }
 
+
+
+/*--------------------------------------------------------
+/* Reservation page style atart here
+--------------------------------------------------------*/
+
+.res-right { width: 445px; margin-left: 0%; position: fixed; border: 1px solid #CB1130;right:11%;top:0; }
+.res-right form{padding:30px;}
+section.res-right p { font-size: 18px; text-align: center; background: #CB1130; color: #fff; padding: 16px 0; margin-bottom: 0; }
+.res-flip.cf { width: 100%; display: flex; flex-wrap: wrap; }
+.res-left { width: 63%;margin-right:2%;}
+.main-s img {box-shadow: 59px 67px #EBEBEB;max-height:580px;max-width: 980px;width: 100%;}
+.feature-rl ul li { font-family: 'Roboto-Regular'; color: #6D6D6D; position: relative; font-size: 22px; font-weight: 400; border-bottom: 1px dashed #707070; padding: 17px 0 6px; padding-left: 0; margin-bottom: 20px; padding-bottom: 8px; }
+.exp p { margin-bottom: 50px; }
+#about-inner { margin-bottom: 90px; width:93%;}
+.feature-rl h3 { color: #6D6D6D;padding-top:15px; }
+.feature-rl h3 span{color:#CB1130;}
+.book-now a {margin-top:60px;border-radius: 5px;padding: 15px 0;background: #CB1130; color: #fff; max-width: 200px; display: block;font-size:18px; text-align: center;font-family: 'Roboto-Regular'; }
+.book-now a:hover { background: rgba(203, 17, 48, 0.8); }
+
+.logo-top { text-align: center;padding-bottom:30px; }
+.f-menu ul li { display: inline-block; margin: 0 auto; position: relative; padding: 0 25px; }
+.f-menu ul { text-align: center; }
+.f-menu ul li:before { content: ""; position: absolute; left: -6px; height: 12px; width: 12px; border-radius: 50%; background: #CB1130; top: 5px; }
+.footer-top { padding-bottom: 30px; }
+
+/*--------------------------------------------------------
+/* Reservation form style start here
+--------------------------------------------------------*/
+
+.col-x2 { display: flex;width: 100%; }
+.reservation-form label {padding-bottom:10px; color: #000000; font-size: 18px;font-family: 'Roboto-Bold';display:block; }
+.col-x2 > div { width: 49%; }
+.col-x2 > div:first-child{margin-right:2%;}
+.night select {width: 100%;}
+.ch-in input { max-width: 198px; width: 100%; }
+.night select { max-width: 138px; width: 100%; }
+.reservation-form input {margin-bottom:45px;font-size:16px; background: #CB1130; color: #fff; border: 0; border-radius: 5px; padding: 16px 15px; box-sizing: border-box; outline: 0; }
+.reservation-form select {background:#CB1130; margin-bottom: 45px;max-width:139px;font-size:16px; color: #fff; border: 0; border-radius: 5px; padding: 16px 10px; width: 100%; }
+.reservation-form li { display: flex; align-items: center; flex-wrap: wrap; }
+.ch-out{width:49%;max-width: 198px;position:relative;}
+.ch-out input {max-width: 198px;width: 100%;}
+.ch-out:after { content: ""; position: absolute; background: url(../images/09.png); height: 24px; width: 24px; top: 43px; right: 12px; background-size: 24px; }
+.col-x1 { width: 100%; }
+.fixed{position:relative !important;}
+.ch-in{position:relative; max-width: 198px;}
+.ch-in:after { content: ""; position: absolute; background: url(../images/09.png); height: 24px; width: 24px; top: 43px; right: 12px; background-size: 24px; }
+.col-x3 { display: flex; flex-wrap: wrap;width:100%; align-items:center;}
+.r1 label { padding-right: 20px; }
+.r1{ width:30%; }
+.adu { width: 30%; margin-right: 2%; }
+.child{width:27%;}
+.main-s:after { content: ""; position: absolute; background: url(images/bg.png); max-height: 580px; width: 100%; right: -52px; bottom: -66px; height: 100%; }
+.main-s{position:relative;}
+button.booking {border-radius: 5px; background: #CB1130; border: #CB1130; padding: 16px 17px; font-size: 16px; color: #fff; text-transform: uppercase; }
+
+/*--------------------------------------------------------
+/* explore page style atart here
+--------------------------------------------------------*/
+
+
+#explore p { font-size: 16px; font-weight: 400; line-height: 1.6; }
+
+
+/*********************confermation page style***************************/
+
+.book { padding-top: 55px;position:relative;padding-bottom: 15px; }
+.book h2{position:relative;padding-bottom: 15px;margin-bottom: 100px;}
+.book h2:after { content: ""; position: absolute; background: #CB1130; height: 3px; width: 60px; left: 0; bottom: 0; }
+.check-detail { display: flex; flex-wrap: wrap; }
+.b-detail h4 { font-size: 30px; margin-bottom: 30px; }
+.check-detail { display: flex; flex-wrap: wrap; max-width: 1350px; border: 1px solid #000; padding: 0px 20px; line-height: 2.1; }
+.check-right h5 { margin-bottom: 0;font-size:30px; }
+.check-right { width: 67%; padding: 45px 0 42px; padding-left: 2%; }
+.b-detail > div:last-child { border-top: 0; }
+.check-left { width: 30%; padding: 45px 0 42px; border-right: 1px solid #707070; }
+.check-left h5 { margin-bottom: 0;font-size:30px; }
+.check-right h5 span { color: #CB1130;font-family: 'Roboto-Regular'; }
+.cont.cir .checkmark:after { left: 6px; top: 3px; width: 3px; height: 6px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.b-detail { margin-bottom: 60px; }
+.acm h3 { margin-bottom: 20px; }
+.acm p { font-size: 18px;margin-bottom:30px; }
+.acm p span{color:#CB1130;line-height:1.5;}
+#acm label{font-family: 'Roboto-Regular'; font-size:23px;font-weight:400;display:block;    margin-bottom: 30px;}
+#acm select {box-shadow: 0px 1px 0px 1px #707070; max-width: 800px; background: #fff url(../images/caret-down.png); background-repeat: no-repeat; background-position: 98%; background-size: 20px; width: 100%; height: 100px; -webkit-appearance: none; padding: 0 20px; font-size: 20px;margin-bottom:60px;}
+#acm li label { display: inline-block; margin-bottom: 0; vertical-align: middle;font-size: 18px; }
+#acm ul li { margin-bottom: 20px; }
+#acm li input { display: inline-block; vertical-align: middle; }
+#acm { margin-bottom: 50px; }
+
+.addtional-s h3 { margin-bottom: 50px; }
+.addtional-s ul { display: flex; flex-wrap: wrap; }
+.addtional-s ul li { width: 50%; }
+.addtional-s ul li label{font-family: 'Roboto-Regular';font-size:18px;}
+.addtional-s select { box-shadow: 0px 1px 0px 1px #707070;max-width: 200px; background: #fff url(../images/caret-down.png); background-repeat: no-repeat; background-position: 98%; background-size: 20px; width: 100%;margin-left: 10px;margin-right: 10px; height: 80px; -webkit-appearance: none; padding: 0 20px; font-size: 20px; margin-bottom: 60px; }
+
+.info p { font-size: 18px; margin-bottom:50px;}
+.addtional-s h3 span { color: #CB1130; }
+.addtional-s h3{color:#6D6D6D;}
+.info h3 { margin-bottom: 30px; }
+#more-info input { font-family: 'Roboto-Regular';font-size:18px;box-shadow: 0px 1px 0px 1px #707070;border: 1px solid #707070; outline: 0; height: 80px; max-width: 600px; width: 100%; padding: 0 20px; box-sizing: border-box; margin-bottom: 60px; }
+#more-info textarea {height:200px;font-family: 'Roboto-Regular';font-size:18px; box-shadow: 0px 1px 0px 1px #707070;border: 1px solid #707070;max-width: 600px; width: 100%; padding: 20px; box-sizing: border-box; margin-bottom: 60px; }
+#more-info input:focus{outline:0;box-shadow: 0px 1px 0px 1px #CB1130;border: 1px solid #CB1130;color:#CB1130}
+#more-info input:active{outline:0;box-shadow: 0px 1px 0px 1px #CB1130;border: 1px solid #CB1130;color:#CB1130}
+#more-info label {max-width:600px;font-family: 'Roboto-Regular';font-size: 18px; color: #6D6D6D;margin-bottom:30px;display:block; }
+label.cont input { width: 0 !important; }
+#more-info .cont{padding-left: 45px; padding-top: 6px;margin-bottom:60px; }
+.book-now {border-radius: 5px; box-shadow: none; background: #CB1130; border: 0; color: #fff; height: 50px; width: 200px; font-size: 18px; cursor: pointer; }
+#more-info textarea:focus {outline:0;box-shadow: 0px 1px 0px 1px #CB1130;border: 1px solid #CB1130;color:#CB1130;}
+#more-info textarea:active {outline:0;box-shadow: 0px 1px 0px 1px #CB1130;border: 1px solid #CB1130;color:#CB1130;}
+
 /**********************responsive start here******************************/
+
+@media(max-width: 1700px){
+	.res-right{right:8%;}
+}
+
+@media(max-width: 1600px){
+	.res-right{right:4%;}
+}
+
 
 @media(max-width:1500px){
 .container{padding:0 20px;}
+.res-right{right:20px;width:31%;}
+.col-x2 { display: flex; width: 100%; flex-wrap: wrap; }
+.res-right form { padding: 40px 15px;}
+
+
 }
 @media(max-width:1200px){
 	h1 { font-family: 'Roboto-Bold';font-size: 40px; text-transform: uppercase; position: relative; margin-bottom: 0px; }
@@ -248,6 +436,15 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	form.contactForm input{padding:15px 20px;}
 	.col-1 .form-field textarea#message{height:60px;}
 	iframe {height: 600px;}
+	.book h2{margin-bottom:50px;}
+	.check-left h5,.check-right h5{font-size:25px;}
+	.check-left{padding:20px 0;}
+	.check-right { padding: 20px; width: 64%; }
+	.b-detail {margin-bottom: 40px;}
+	#acm select{height:50px;margin-bottom: 35px;}
+	.addtional-s ul li label{font-size:16px;}
+	.addtional-s select{max-width: 150px;background-position: 94%;}
+	.res-right form { padding: 40px 8px; }
 }
 
 
@@ -266,10 +463,29 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	.r-detail a{font-size:18px;}
 	.r-detail a:after { right: 42px; top: 3px; }
 	.r-detail p{font-size:15px;}
+	.check-right{padding:0;width:69%;}
+	.check-left h5, .check-right h5{padding:20px 10px;}
+	.check-detail{padding:0;}
+	.addtional-s ul li {width: 100%;}
+	.check-left{padding:0;}
+	.b-detail{margin-bottom:20px;}
+	#acm {margin-bottom: 35px;}
+	.info p{margin-bottom:30px;}
+	#more-info input{margin-bottom:30px;height:50px;}
+	#more-info textarea{height:100px;}
+	.col-x2{display:block;}
+	.col-x2 > div:first-child { margin-right: 0; width: 100%; }
+	.col-x3{display:block;}
+	.r1 {width: 100%;}
+	.adu { width: 100%; margin-right: 0; max-width: 100%; }
+	.child {width: 27%;}
+	.reservation-form input{margin-bottom:20px;}
+	.ch-out{width:100%;}
 }
 @media(max-width:767px){
 	h1{font-size:30px;}
 	h2{font-size:25px;}
+	h3{font-size:20px;}
 	.l-menu{display:none;}
 	.sidenav{display:block;}
 	.toggle{display:block;}
@@ -306,12 +522,38 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	.feature-l ul li{text-align:left;}
 	.contact-us{padding:50px 0 30px;}
 	footer p{padding:15px 0;font-size:14px;}
+	.addtional-s select { max-width: 100px; background-position: 94%; height: 50px; }
+	.check-left h5, .check-right h5 {font-size: 20px;padding:0 10px;}
+	#more-info label{font-size:16px;}
+	.checkmark{height:20px;width:20px;top:15px;}
+	#more-info .cont{padding-left:33px;}
+	.cont .checkmark:after { left: 7px; top: 2px;}
+	.addtional-s select{margin-bottom:30px;}
+	#more-info .cont{margin-bottom:35px;}
+	form#more-info{margin-bottom:45px;}
+	.f-menu ul li{margin-bottom:20px;}
+	.res-right{position:relative;width:100%;right:0;}
+	.res-right form{padding:40px 0;}
+	.res-right { position: relative; width: 100%; max-width: 480px; margin: 0 auto;margin-bottom:40px; }
+	.res-left { width: 98%; margin-right: 0; padding: 0 1%; order: 1; }
+	.col-x1 { width: 100%; padding: 0 20px; }
+	.col-x2 {display: flex;padding: 0 20px;}
+	.col-x2 > div:first-child {margin-right: 2%;width: 49%;}
+	.col-x3 {display: flex;padding:0 20px;}
+	.r1 {width: 30%;}
+	.adu{width:30%;margin-right: 5%;}
+	.child {width: 30%;}
+	button.booking{margin:0 20px;}
+
+
+
 	/********************banner*********************************/
 }
 
 @media(max-width:640px){
 	form.subscribe-f input{min-width:200px;}
 	button.subscribe-btn{width:150px;}
+	.check-left h5, .check-right h5{font-size:16px;}
 }
 
 @media(max-width:480px){
@@ -322,6 +564,8 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 	.r-main > div{width:100%;margin-right:0;margin:0 auto;margin-bottom:30px;}
 	.r-main > div:nth-of-type(3n){margin-right:0%;margin:0 auto;margin-bottom:30px;}
 	.r-main > div:nth-of-type(2n){margin:0 auto;margin-bottom:30px;}
+	.addtional-s select { max-width: 42px; background-position: 94%; height: 37px; background-size: 8px; padding: 0 10px; font-size: 17px; margin-left: 5px; margin-right: 5px; }
+	.addtional-s ul li label {font-size: 12px;}
 	
 }
 
