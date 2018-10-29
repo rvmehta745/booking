@@ -280,7 +280,7 @@ button.contact-sub { background: #CB1130; border: 0; color: #fff; width: 200px; 
 .cont.cir .checkmark { height: 18px; width: 18px; border-radius: 50%; }
 form#more-info { margin-bottom: 74px; }
 .b-detail h3 { margin-bottom: 30px; }
-
+.exp .r-img img { height: 200px; width: 300px; }
 
 /*--------------------------------------------------------
 /* footer part style
