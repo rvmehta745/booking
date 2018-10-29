@@ -301,11 +301,13 @@ footer p { text-align: right; margin-bottom: 0; padding: 30px 0; border-top: 1px
 /* Reservation page style atart here
 --------------------------------------------------------*/
 
-.res-right { width: 445px; margin-left: 0%; position: fixed; border: 1px solid #CB1130;right:11%;top:60px; }
+.res-right { width: 445px; margin-left: 0%; position: relative;}
 .res-right form{padding:30px;}
 section.res-right p { font-size: 18px; text-align: center; background: #CB1130; color: #fff; padding: 16px 0; margin-bottom: 0; }
-.res-flip.cf { width: 100%; display: flex; flex-wrap: wrap; }
-.res-left { width: 63%;margin-right:2%;}
+.res-flip.cf { width: 100%; display: flex; align-items: flex-start; }
+.res-right-inner { position: fixed; top: 60px; border: 1px solid #CB1130; width: 445px; }
+.res-left { width: calc(100% - 444px); }
+.r-left-inner { padding-right: 9%; }
 .main-s img {box-shadow: 59px 67px #EBEBEB;max-height:580px;max-width: 980px;width: 100%;}
 .feature-rl ul li { font-family: 'Roboto-Regular'; color: #6D6D6D; position: relative; font-size: 22px; font-weight: 400; border-bottom: 1px dashed #707070; padding: 17px 0 6px; padding-left: 0; margin-bottom: 20px; padding-bottom: 8px; }
 .exp p { margin-bottom: 50px; }
@@ -485,6 +487,8 @@ label.cont input { width: 0 !important; }
 	.child {width: 27%;}
 	.reservation-form input{margin-bottom:20px;}
 	.ch-out{width:100%;}
+	.res-right-inner{width:300px;}
+	.res-left { width: calc(100% - 301px); }
 }
 @media(max-width:767px){
 	h1{font-size:30px;}
@@ -549,6 +553,11 @@ label.cont input { width: 0 !important; }
 	.child {width: 30%;}
 	button.booking{margin:0 20px;}
 .fr-inner { margin-bottom: 40px; }
+.res-right-inner{width:100%;}
+	.res-left { width:100%;}
+	.res-flip.cf{flex-wrap:wrap;}
+	.res-right-inner{position:relative;top:0;}
+	.r-left-inner{padding-right:0;}
 
 
 	/********************banner*********************************/

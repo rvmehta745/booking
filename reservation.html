@@ -12,6 +12,7 @@
 <div class="container">
 <div class="res-flip cf">
 <section class="res-left">
+	<div class="r-left-inner">
 	<section class="r-banner" id="about-inner">
 			<div class="main-s">
 				<img src="images/about.png">
@@ -72,8 +73,10 @@
 				</div>
 			</div>
 	</section>
+	</div>
 </section>
 <section class="res-right">
+	<div class="res-right-inner">
 	<p>YOUR RESERVATION</p>
 	<form action="/action_page.php" class="reservation-form">
 		<ul>
@@ -142,6 +145,7 @@
 			<button class="booking">Check Availability</button>
 		</ul>
 	</form>
+	</div>
 </section>
 </section>
 <section class="footer-top">
@@ -175,22 +179,14 @@
   } );
   $(document).ready(function(){
   	$(window).on('scroll',function(){
-  		var f_top=$(".footer-top").offset().top;
+  		var f_top=$(".explore").offset().top;
   		console.log($(window).scrollTop());
   		if($(window).scrollTop() >= f_top)
   		{
-  			$('.res-right').addClass('fixed');
+  			$('.res-right-inner').addClass('fixed');
   		}
   		else{
-  			$('.res-right').removeClass('fixed');
-  		}
-
-  		if($(window).scrollTop() > 0)
-  		{
-  			$('.res-right').addClass('affix');
-  		}
-  		else{
-  			$('.res-right').removeClass('affix');
+  			$('.res-right-inner').removeClass('fixed');
   		}
   	});
   });
