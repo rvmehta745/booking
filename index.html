@@ -211,7 +211,7 @@
 					</div>
 					<div class="contact-us-right">
 						<div class="map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.490150172385!2d72.51218491512721!3d23.04248518494303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b4e778ed10f%3A0xe9e228ed30b26502!2sThe+Grand+Bhagwati!5e0!3m2!1sen!2sin!4v1540317731790" width="100%" height="825" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.490150172385!2d72.51218491512721!3d23.04248518494303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b4e778ed10f%3A0xe9e228ed30b26502!2sThe+Grand+Bhagwati!5e0!3m2!1sen!2sin!4v1540317731790" width="100%" height="538" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
