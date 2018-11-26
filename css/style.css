@@ -178,7 +178,7 @@ header { position: fixed; width: 200px; left: 0; height: 100vh;box-shadow: 1px 1
 
 .banner { height: 100vh; display: flex; align-items: center;  background: url(../images/about.png); background-repeat: no-repeat; background-size: cover; background-position: center;position:relative; }
 .banner:before{content:"";position:absolute;height:100%;width:100%;top:0;left:0;background-color:rgba(0,0,0,0.6);}
-.banner-inner { position: relative; color: #fff; max-width: 630px;padding-left:63px; }
+.banner-inner { position: absolute; color: #fff; max-width: 630px;padding-left:63px; }
 .banner-inner h1:after { content: ""; position: absolute; height: 2px; width: 60px; background: #CB1130; left: 0; bottom: 0; }
 .banner-inner h1 { position: relative; padding-bottom: 13px; margin-bottom: 45px; }
 form.serch { display: flex; flex-wrap: wrap; }
