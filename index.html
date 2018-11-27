@@ -54,14 +54,14 @@
 	<section class="right-sec">
 		<section class="banner" id="home">
 			<div class="banner-slider">
-				<div class="banner-main-img">
-					<img src="images/about.png">
+				<div class="banner-main-img" style="background-image:url(images/about.png)">
+					<!-- <img src="images/about.png">-->
+				</div> 
+				<div class="banner-main-img" style="background-image:url(images/Depositphotos.png)">
+					<!-- <img src="images/Depositphotos.png"> -->
 				</div>
-				<div class="banner-main-img">
-					<img src="images/Depositphotos.png">
-				</div>
-				<div class="banner-main-img">
-					<img src="images/about.png">
+				<div class="banner-main-img" style="background-image:url(images/about.png)">
+					<!-- <img src="images/about.png"> -->
 				</div>
 			</div>
 			<div class="banner-inner">
@@ -262,10 +262,11 @@ $(document).ready(function(){
   $('.banner-slider').slick({
     lidesToShow: 1,
 	slidesToScroll: 1,
+	infinite: true,
 	arrows: false,
 	autoplay: true,
 	autoplaySpeed: 5000,
-	dots:true
+	dots:false
   });
 });
 
