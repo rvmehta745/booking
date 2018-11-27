@@ -53,6 +53,17 @@
 	</header>
 	<section class="right-sec">
 		<section class="banner" id="home">
+			<div class="banner-slider">
+				<div class="banner-main-img" style="background-image:url(images/about.png)">
+					<!-- <img src="images/about.png">-->
+				</div> 
+				<div class="banner-main-img" style="background-image:url(images/Depositphotos.png)">
+					<!-- <img src="images/Depositphotos.png"> -->
+				</div>
+				<div class="banner-main-img" style="background-image:url(images/about.png)">
+					<!-- <img src="images/about.png"> -->
+				</div>
+			</div>
 			<div class="banner-inner">
 				<h1>Spend Quality Holidays With Us</h1>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -244,6 +255,18 @@ $(document).ready(function(){
 	autoplay: true,
 	autoplaySpeed: 5000,
 	dots:true
+  });
+});
+
+$(document).ready(function(){
+  $('.banner-slider').slick({
+    lidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	dots:false
   });
 });
 
