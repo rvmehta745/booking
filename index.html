@@ -75,10 +75,161 @@
 				</form>
 			</div>
 		</section>
+		<section>
+			<div class="filter">
+				<ul>
+					<li class="price-filter">
+						<input type="range" min="1" max="10000" value="50" class="slider" id="myRange">
+						 <p>Price: <span id="demo"></span></p>
+					</li>
+					<li class="custom-select">
+					  <select>
+					    <option value="0">Accommodation</option>
+					    <option value="1">5 STAR</option>
+					    <option value="2">4 STAR</option>
+					    <option value="3">3 STAR</option>
+					    <option value="4">2 STAR</option>
+					    <option value="5">1 STAR</option>
+					    <option value="6">HOUSE AND APPERTMENT</option>
+					    
+					  </select>
+					</li>
+						<li class="custom-select">
+					  <select>
+					    <option value="0">Guest rating</option>
+					    <option value="1">8.5 Excellent</option>
+					    <option value="2">7 Very good</option>
+					    <option value="3">6 Good</option>
+					    <option value="4">3 Fair</option>
+					    <option value="5">2 Okay</option>
+					    <option value="6">1 Bad</option>
+					    
+					  </select>
+					</li>
+				</ul>	
+			</div>
+		</section>	
+
 		<section class="explore" id="explore">
 			<div class="container">
 				<h2>Explore Rooms</h2>
 				<div class="r-main">
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/about.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/Depositphotos.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_04-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_05-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/slide_02-891x636.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/about.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/Depositphotos.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+							<div class="rate"></div>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_04-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_05-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/slide_02-891x636.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
 					<div class="r-inner">
 						<div class="r-img">
 							<img src="images/about.png" alt="" title="">
@@ -132,6 +283,63 @@
 							<a href="#">Single Rooms</a>
 							<p>Prices start at: $40 per night</p>
 						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/about.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/Depositphotos.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_04-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/triple_room_05-235x167.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="r-inner">
+						<div class="r-img">
+							<img src="images/slide_02-891x636.png" alt="" title="">
+						</div>
+						<div class="r-detail">
+							<a href="#">Single Rooms</a>
+							<p>Prices start at: $40 per night</p>
+						</div>
+					</div>
+					<div class="load-more">
+						<a href="#" id="load">load more</a>
 					</div>
 				</div>
 			</div>
@@ -237,51 +445,7 @@
 	
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
-<script>
-function openNav() {
-    document.getElementById("Sidenav").style.width = "200px";
-}
-
-function closeNav() {
-    document.getElementById("Sidenav").style.width = "0";
-}
-</script>
-<script>
-$(document).ready(function(){
-  $('.test').slick({
-    lidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 5000,
-	dots:true
-  });
-});
-
-$(document).ready(function(){
-  $('.banner-slider').slick({
-    lidesToShow: 1,
-	slidesToScroll: 1,
-	infinite: true,
-	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 5000,
-	dots:false
-  });
-});
-
-$( ".l-menu a[href^='#'], .res-menu a[href^='#']").on( 'click', function ( e ) {
-			// prevent default anchor click behavior
-			e.preventDefault();
-			// store hash
-			var hash = this.hash;
-			window.location.hash = "";
-			// animate
-			$( 'html, body' ).animate( {
-				scrollTop: $( hash ).offset().top
-			}, 1000, function () {
-			});
-});
-</script>
+<script type="text/javascript" src="js/jquery.raty.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

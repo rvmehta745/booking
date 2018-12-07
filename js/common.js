@@ -1,0 +1,148 @@
+/*********menu js*************/
+
+function openNav() {
+    document.getElementById("Sidenav").style.width = "200px";
+}
+
+function closeNav() {
+    document.getElementById("Sidenav").style.width = "0";
+}
+
+/*************slider js****************/
+
+$(document).ready(function(){
+  $('.test').slick({
+    lidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	dots:true
+  });
+});
+
+$(document).ready(function(){
+  $('.banner-slider').slick({
+    lidesToShow: 1,
+	slidesToScroll: 1,
+	infinite: true,
+	arrows: false,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	dots:false
+  });
+});
+
+
+/**************offset top js**************/
+
+$( ".l-menu a[href^='#'], .res-menu a[href^='#']").on( 'click', function ( e ) {
+			// prevent default anchor click behavior
+			e.preventDefault();
+			// store hash
+			var hash = this.hash;
+			window.location.hash = "";
+			// animate
+			$( 'html, body' ).animate( {
+				scrollTop: $( hash ).offset().top
+			}, 1000, function () {
+			});
+});
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+var x, i, j, selElmnt, a, b, c;
+/*look for any elements with the class "custom-select":*/
+x = document.getElementsByClassName("custom-select");
+for (i = 0; i < x.length; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < selElmnt.length; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < s.length; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            for (k = 0; k < y.length; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+}
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  for (i = 0; i < y.length; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
+    } else {
+      y[i].classList.remove("select-arrow-active");
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
+}
+document.addEventListener("click", closeAllSelect);
+
+$(function(){
+    $(".r-inner").slice(0, 9).show(); // select the first ten
+    $("#load").click(function(e){ // click event for load more
+        e.preventDefault();
+        $(".r-inner:hidden").slice(0, 9).show(); // select next 10 hidden divs and show them
+        if($(".r-inner:hidden").length == 0){ // check if any hidden divs still exist
+            alert("No more hotels"); // alert if there are none left
+        }
+    });
+
+    $('.rate').raty({
+      readOnly:  true,
+      start:     2
+    });
+});
+ 
+
+
