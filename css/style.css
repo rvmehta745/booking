@@ -444,7 +444,7 @@ label.cont input { width: 0 !important; }
 .filter ul {
     display: flex;
 }
-.filter ul li{width: 33%; display: inline-block; vertical-align: top;padding: 0 5px;}
+.filter ul li{width: 32%;margin: 0 1%; display: inline-block; vertical-align:top;  }
 /*the container must be positioned relative:*/
 .custom-select {
   position: relative;
@@ -489,7 +489,7 @@ body .r-main #load{padding: 10px 0; display: block; text-align: center; margin: 
 .select-items {
   position: absolute;
   background-color: #CB1130;
-  top: 100%;
+  top: 37px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -597,6 +597,8 @@ body .r-main #load{padding: 10px 0; display: block; text-align: center; margin: 
 @media(max-width:940px){
 	form.serch input{min-width:250px;}
 	button.submit{min-width:150px;}
+	.select-items div, .select-selected{font-size: 14px;padding: 8px 10px;}
+	.select-items{top:34px;}
 }
 @media(max-width:767px){
 	h1{font-size:30px;}

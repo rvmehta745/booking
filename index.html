@@ -84,13 +84,14 @@
 					</li>
 					<li class="custom-select">
 					  <select>
-					    <option value="0">Accommodation</option>
-					    <option value="1">5 STAR</option>
-					    <option value="2">4 STAR</option>
-					    <option value="3">3 STAR</option>
-					    <option value="4">2 STAR</option>
-					    <option value="5">1 STAR</option>
-					    <option value="6">HOUSE AND APPERTMENT</option>
+					    <option value="0">Category</option>
+					    <option value="1">Hotel</option>
+					    <option value="2">Resort</option>
+					    <option value="3">Home Stay</option>
+					    <option value="4">Restaurant</option>
+					    <option value="5">Farm House</option>
+					    <option value="6">Camp Site</option>
+					    <option value="6">Other</option>
 					    
 					  </select>
 					</li>
@@ -102,8 +103,7 @@
 					    <option value="3">6 Good</option>
 					    <option value="4">3 Fair</option>
 					    <option value="5">2 Okay</option>
-					    <option value="6">1 Bad</option>
-					    
+					    <option value="6">1 Bad</option>					    
 					  </select>
 					</li>
 				</ul>	
